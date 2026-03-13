@@ -9,6 +9,12 @@ body {
   margin: 0 auto; 
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav {
     display: flex;
     list-style: none;
