@@ -1,6 +1,16 @@
 
+body {
+    font-size: 1.4rem;
+}
+
 .container {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto; 
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
 }
