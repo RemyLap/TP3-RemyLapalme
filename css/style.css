@@ -91,7 +91,7 @@ body {
 }
 
 
-/* -------- PAGE ACCEUIL -------- */
+/* -------- PAGE ACCEUIL BANNIERE-------- */
 
 .banner{
 padding:80px 0;
@@ -162,12 +162,59 @@ background:white;
 color:black;
 }
 
+/* -------- PAGE ACCEUILTÉMOIGNAGES-------- */
 
+.testimonials{
+  padding:40px;
+}
 
+.subtitle{
+  color:gray;
+  margin-bottom:30px;
+}
 
+.testimonials-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
 
+.testimonial{
+  background:#eee;
+  padding:20px;
+  border-radius:17px;
+  width: calc(30% - 14px);
+  display:flex;
+  flex-direction:column;
+}
 
+.testimonial-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:0px;
+}
 
+.testimonial-name{
+  font-weight:bold;
+}
 
+.testimonial-text{
+  font-size: 20px;
+  margin: 0px;
+}
+
+.testimonial-img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.testimonial-icon{
+width:40px;
+height:40px;
+fill:#333;
+}
 
 
