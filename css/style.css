@@ -27,8 +27,6 @@ h1 {
 
 
 
-
-
 /* -------- FOOTER -------- */
 
 
@@ -119,6 +117,7 @@ flex: 1;
 width:100%;
 aspect-ratio:5 / 4;
 border:3px solid black;
+aspect-ratio: 1 / 1;
 }
 
 
@@ -265,7 +264,7 @@ input[type="radio"] + label {
 .restaurant-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 25px;
 }
 
 .grid-img {
@@ -308,4 +307,43 @@ input[type="radio"] + label {
 .grid-img-bottom-right {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
+}
+
+/* --section address-- */
+
+.restaurant-info {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  margin-top: 130px;
+  align-items: center;
+}
+
+.restaurant-details {
+  font-style: normal;
+  align-self: center;
+}
+
+.restaurant-details h2 {
+  margin: 15px 0 15px;
+  font-size: 2.8rem;
+  
+}
+
+.restaurant-details p,
+.restaurant-details a {
+  margin: 0 0 32px;
+  font-size: 2rem;
+}
+
+.restaurant-map {
+  width: 100%;
+  
+}
+
+.restaurant-map img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  
+  min-height: 420px;
 }
