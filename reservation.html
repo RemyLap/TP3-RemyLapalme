@@ -25,7 +25,107 @@
         </div>
     </header>
 
-    <section></section>
+    <main>
+        <section class="container">
+            <h1>Réservation</h1>
+            <p>Les champs marqués d’un * sont obligatoires.</p>
+
+            <form action="confirmation-reservation.html" method="post">
+
+                <fieldset>
+                    <legend>Informations du client</legend>
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <br><br>
+
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <br><br>
+
+                    <label for="telephone">Téléphone *</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="819-555-1234" required>
+
+                    <br><br>
+
+                    <label for="courriel">Courriel</label>
+                    <input type="email" id="courriel" name="courriel" placeholder="nom@exemple.com">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Détails de la réservation</legend>
+
+                    <label for="personnes">Nombre de personnes *</label>
+                    <input type="number" id="personnes" name="personnes" min="1" required>
+
+                    <br><br>a
+
+                    <label for="date">Date de réservation *</label>
+                    <input type="date" id="date" name="date" min="2026-03-21" max="2027-12-31" required>
+
+                    <br><br>
+
+                    <label for="heure">Heure *</label>
+                    <select id="heure" name="heure" required>
+                        <option value="">Choisir une heure</option>
+                        <option>12:00</option>
+                        <option>12:30</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>17:00</option>
+                        <option>17:30</option>
+                        <option>18:00</option>
+                        <option>18:30</option>
+                        <option>19:00</option>
+                        <option>19:30</option>
+                        <option>20:00</option>
+                        <option>20:30</option>
+                        <option>21:00</option>
+                    </select>
+
+                    <br><br>
+
+                    <p>Emplacement *</p>
+
+                    <input type="radio" id="salle" name="emplacement" value="salle" required>
+                    <label for="salle">Salle à manger</label>
+
+                    <br>
+
+                    <input type="radio" id="terrasse" name="emplacement" value="terrasse">
+                    <label for="terrasse">Terrasse</label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Informations supplémentaires</legend>
+
+                    <label for="commentaire">Commentaire</label>
+                    <br>
+                    <textarea id="commentaire" name="commentaire"></textarea>
+
+                    <br><br>
+
+                    <input type="checkbox" id="infolettre" name="infolettre">
+                    <label for="infolettre">Je souhaite m'inscrire à l’infolettre</label>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Confirmer la réservation</button>
+                <button type="reset">Réinitialiser</button>
+
+            </form>
+        </section>
+    </main>
 
     <footer>
 
