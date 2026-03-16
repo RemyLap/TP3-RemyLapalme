@@ -347,3 +347,59 @@ input[type="radio"] + label {
   
   min-height: 420px;
 }
+
+/* -------- PAGE MA COMMANDE-------- */
+
+
+.layout{
+  display:flex;
+  align-items: flex-start;
+  gap:80px;
+}
+
+.commande{
+  flex:1;
+}
+
+section{
+  margin-bottom:60px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead{
+  background:#e5e5e5;
+}
+
+th,td{
+  padding:12px;
+  text-align:left;
+}
+
+tbody tr:nth-child(even){
+  background:#e5e5e5;
+}
+
+.aside-details{
+  width:300px;
+  background:#d9d9d9;
+  padding:20px;
+  margin-top: 93px;
+}
+
+.details h2 {
+  margin-top: 0;
+}
+
+.btn-Pay{
+  display:inline-block;
+  margin-top:20px;
+  background:black;
+  color:white;
+  padding:10px 20px;
+  text-decoration:none;
+}
+
