@@ -89,14 +89,15 @@ h1 {
 
 .footer-info {
   display: flex;
-  gap: 30px;
+  gap: 35px;
 }
 
 
 /* -------- PAGE ACCEUIL BANNIERE-------- */
 
 .banner{
-padding:80px 0;
+padding-top:70px;
+padding-bottom: 20px;
 }
 
 .banner-content{
@@ -365,9 +366,6 @@ input[type="radio"] + label {
   flex:1;
 }
 
-section{
-  margin-bottom:60px;
-}
 
 table{
   width:100%;
