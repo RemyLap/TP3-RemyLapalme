@@ -36,6 +36,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 45px;
 }
 
 .footer-author {
@@ -69,7 +70,7 @@ h1 {
   border: none;
   height: 2px;
   background-color: #222;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 
@@ -79,6 +80,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
 }
 
 .footer-bottom a,
