@@ -470,3 +470,54 @@ tbody tr:nth-child(even){
   text-decoration:none;
 }
 
+/* -------- LOGO-------- */
+
+
+.logo svg {
+  width: 200px;
+  height: auto;
+  display: block;
+  display: inline-block;
+}
+
+.logo:hover svg {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+.bg {
+  fill: none;
+}
+
+
+.icon {
+  stroke: #8b1e2d;
+  stroke-width: 8;
+  fill: none;
+}
+
+.icon-fill {
+  fill: #8b1e2d;
+}
+
+
+.text-small {
+  fill: #8b1e2d;
+  font-size: 28px;
+  font-family: Georgia, serif;
+  letter-spacing: 5px;
+}
+
+.text-big {
+  fill: #8b1e2d;
+  font-size: 64px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+
+.line {
+  stroke: #8b1e2d;
+  stroke-width: 3;
+}
