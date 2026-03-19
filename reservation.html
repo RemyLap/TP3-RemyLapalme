@@ -41,101 +41,103 @@
     <main>
         <section class="container">
             <h1>Réservation</h1>
-            <p>Les champs marqués d’un * sont obligatoires.</p>
+            <p class="required-note">Les champs marqués d’un <span class="required-icon">*</span> sont obligatoires.</p>
 
-            <form action="reservation-confirmation.html" method="get">
-
+            <form action="reservation-confirmation.html" method="get" class="reservation-form">
                 <fieldset>
                     <legend>Informations du client</legend>
+                    <h2 class="section-title">Informations du client</h2>
 
-                    <label for="prenom">Prénom *</label>
-                    <input type="text" id="prenom" name="prenom" required>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="prenom">Prénom <span class="required-icon">*</span></label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
 
-                    <br><br>
+                        <div class="form-group">
+                            <label for="nom">Nom <span class="required-icon">*</span></label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
 
-                    <label for="nom">Nom *</label>
-                    <input type="text" id="nom" name="nom" required>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone <span class="required-icon">*</span></label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="819-555-1234" required>
+                        </div>
 
-                    <br><br>
-
-                    <label for="telephone">Téléphone *</label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="819-555-1234" required>
-
-                    <br><br>
-
-                    <label for="courriel">Courriel</label>
-                    <input type="email" id="courriel" name="courriel" placeholder="nom@exemple.com">
-
+                        <div class="form-group">
+                            <label for="courriel">Courriel</label>
+                            <input type="email" id="courriel" name="courriel" placeholder="nom@exemple.com">
+                        </div>
+                    </div>
                 </fieldset>
-
-                <br>
 
                 <fieldset>
                     <legend>Détails de la réservation</legend>
+                    <h2 class="section-title">Détails de la réservation</h2>
 
-                    <label for="personnes">Nombre de personnes *</label>
-                    <input type="number" id="personnes" name="personnes" min="1" required>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="personnes">Nombre de personnes <span class="required-icon">*</span></label>
+                            <input type="number" id="personnes" name="personnes" min="1" required>
+                        </div>
 
-                    <br><br>
+                        <div class="form-group">
+                            <label for="date">Date de réservation <span class="required-icon">*</span></label>
+                            <input type="date" id="date" name="date" min="2026-03-21" max="2027-12-31" required>
+                        </div>
 
-                    <label for="date">Date de réservation *</label>
-                    <input type="date" id="date" name="date" min="2026-03-21" max="2027-12-31" required>
+                        <div class="form-group">
+                            <label for="heure">Heure <span class="required-icon">*</span></label>
+                            <select id="heure" name="heure" required>
+                                <option value="">Choisir une heure</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
+                                <option>13:00</option>
+                                <option>13:30</option>
+                                <option>17:00</option>
+                                <option>17:30</option>
+                                <option>18:00</option>
+                                <option>18:30</option>
+                                <option>19:00</option>
+                                <option>19:30</option>
+                                <option>20:00</option>
+                                <option>20:30</option>
+                                <option>21:00</option>
+                            </select>
+                        </div>
 
-                    <br><br>
+                        <div class="form-group">
+                            <p class="field-title">Emplacement <span class="required-icon">*</span></p>
+                            <div class="radio-group">
+                                <input type="radio" id="salle" name="emplacement" value="salle" required>
+                                <label for="salle">Salle à manger</label>
 
-                    <label for="heure">Heure *</label>
-                    <select id="heure" name="heure" required>
-                        <option value="">Choisir une heure</option>
-                        <option>12:00</option>
-                        <option>12:30</option>
-                        <option>13:00</option>
-                        <option>13:30</option>
-                        <option>17:00</option>
-                        <option>17:30</option>
-                        <option>18:00</option>
-                        <option>18:30</option>
-                        <option>19:00</option>
-                        <option>19:30</option>
-                        <option>20:00</option>
-                        <option>20:30</option>
-                        <option>21:00</option>
-                    </select>
-
-                    <br><br>
-
-                    <p>Emplacement *</p>
-
-                    <input type="radio" id="salle" name="emplacement" value="salle" required>
-                    <label for="salle">Salle à manger</label>
-
-                    <br>
-
-                    <input type="radio" id="terrasse" name="emplacement" value="terrasse">
-                    <label for="terrasse">Terrasse</label>
-
+                                <input type="radio" id="terrasse" name="emplacement" value="terrasse">
+                                <label for="terrasse">Terrasse</label>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
-
-                <br>
 
                 <fieldset>
                     <legend>Informations supplémentaires</legend>
+                    <h2 class="section-title">Informations supplémentaires</h2>
 
-                    <label for="commentaire">Commentaire</label>
-                    <br>
-                    <textarea id="commentaire" name="commentaire"></textarea>
+                    <div class="form-group full-width">
+                        <label for="commentaire">Commentaire</label>
+                        <textarea id="commentaire" name="commentaire"></textarea>
+                    </div>
 
-                    <br><br>
-
-                    <input type="checkbox" id="infolettre" name="infolettre">
-                    <label for="infolettre">Je souhaite m'inscrire à l’infolettre</label>
-
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="infolettre" name="infolettre">
+                        <label for="infolettre">Je souhaite m'inscrire à l’infolettre</label>
+                    </div>
                 </fieldset>
 
-                <br>
-
-                <button type="submit">Confirmer la réservation</button>
-                <button type="reset">Réinitialiser</button>
-
+                <div class="form-actions">
+                    <button type="submit" class="btn-order-online">Confirmer la réservation</button>
+                    <button type="reset">Réinitialiser</button>
+                </div>
             </form>
         </section>
     </main>

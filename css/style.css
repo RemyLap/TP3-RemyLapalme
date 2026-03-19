@@ -293,36 +293,185 @@ fill:#333;
 /* -------- PAGE RESERVATION-------- */
 
 
-legend {
+.reservation-form {
+  
+  margin: 0 auto;
+}
+
+.required-note {
   text-align: center;
-  font-weight: bold;
 }
 
-label {
-  display: inline-block;
-  width: 120px;
+.required-icon {
+  color:red;
 }
 
-input,
-select,
-textarea {
-  margin-bottom: 10px;
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-textarea {
-  width: 410px;
-  height: 100px;
+.section-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #8b1e2d;
+}
+
+
+.reservation-form fieldset {
+  border: 1px solid #ddd4cd;
+  border-radius: 14px;
+  padding: 1.2rem 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #f8f5f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-form label,
+.field-title {
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: #4a342d;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="email"],
+.reservation-form input[type="number"],
+.reservation-form input[type="date"],
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #d8cfc8;
+  border-radius: 6px;
+  background-color: #fcfaf8;
+  font: inherit;
+  color: #3a2822;
+  box-sizing: border-box;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  outline: none;
+  border-color: #8b1e2d;
+  box-shadow: 0 0 0 2px rgba(139, 30, 45, 0.1);
+}
+
+.reservation-form textarea {
+  min-height: 90px;
   resize: none;
 }
 
-input[type="checkbox"] + label {
-  display: inline;
-  width: auto;
+.full-width {
+  width: 100%;
 }
 
-input[type="radio"] + label {
-  display: inline;
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+
+.checkbox-group input[type="checkbox"] {
   width: auto;
+  accent-color: #8b1e2d;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  flex-wrap: wrap;
+}
+
+.radio-group input[type="radio"] {
+  width: auto;
+  accent-color: #8b1e2d;
+}
+
+.radio-group label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+
+.form-actions {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+.form-actions button {
+  padding: 0.65rem 1.15rem;
+  border-radius: 2px;
+  border: 1px solid #cfc6bf;
+  background-color: #f3efeb;
+  color: #3a2822;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #8b1e2d;
+  border-color: #8b1e2d;
+  color: #f5f3f1;
+}
+
+.form-actions button:hover,
+.form-actions button:focus-visible {
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
+.form-actions button[type="submit"]:hover,
+.form-actions button[type="submit"]:focus-visible {
+  background-color: #8b1e2d;
+  border-color: #8b1e2d;
+}
+
+@media (max-width: 700px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* -------- PAGE RESTAURANT-------- */
