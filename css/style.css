@@ -9,7 +9,7 @@
 body {
   font-size: 1.2rem;
   background-color: #f5f3f1;
-  color: #2b2b2b;
+  color: #6B4F3A;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden
@@ -44,7 +44,7 @@ body {
   height: 4px;
   margin: 5px 0;
   border-radius: 999px;
-  background-color: #2b2b2b;
+  background-color: #4a352b;
 }
 
 
@@ -61,45 +61,67 @@ body {
 }
 
 .nav a {
-  color: #111111;
+  color: #4a352b;
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   transition: 0.2s ease;
   font-family: "Rye", serif;
 }
 
-.nav a:hover,
-.nav a:focus-visible {
-  color: #8b1e2d;
-  text-decoration: underline;
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: #6B4F3A;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
+
+.nav a:hover,
+.nav a:focus-visible,
 .nav a.active {
-  color: #8b1e2d;
+  color: #6B4F3A;
+  text-decoration: none;
+}
+
+.nav a:hover::after,
+.nav a:focus-visible::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.nav a.active {
   font-weight: 600;
-  text-decoration: underline;
-  
 }
 
 .nav-btn {
   display: flex;
-  border: 1px solid #8b1e2d;
-  color: #f5f3f1;
+  border: 1px solid #6B4F3A;
   padding: 6px 14px;
   border-radius: 2px;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
+.nav a.nav-btn::after {
+  display: none;
+}
+
 .nav a.nav-btn:hover {
-  background-color: #8b1e2d;
-  color: #ffffff;
+  background-color: #6B4F3A;
+  color: #f5f3f1;
   text-decoration: none; 
   transform: scale(1.05);
 }
 
 .nav a.nav-btn.active {
-  background-color: #8b1e2d; 
-  color: #ffffff;
-  border-color: #8b1e2d;
+  background-color: #6B4F3A; 
+  color: #f5f3f1;
+  border-color: #6B4F3A;
   text-decoration: none;
 }
 
@@ -107,13 +129,13 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 70px;
-  color: #2b2b2b;
+  color: #4a352b;
   font-family: "Rye", serif;
 }
 
 h2 {
   font-size: 1.4rem;
-  color: #2b2b2b;
+  color: #4a352b;
   font-family: "Rye", serif;
 }
 
@@ -122,6 +144,11 @@ h2 {
 
 
 /* -------- PARTIE HAUT -------- */
+
+footer p {
+  color: #4a352b;
+}
+
 
 .footer-top {
   display: flex;
@@ -149,7 +176,7 @@ h2 {
 }
 
 .social-icons a {
-  color: black;
+  color: #6B4F3A;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -160,7 +187,7 @@ h2 {
 .footer-divider {
   border: none;
   height: 2px;
-  background-color: #222;
+  background-color: #4a352b;
   margin: 20px 0;
 }
 
@@ -177,7 +204,7 @@ h2 {
 
 .footer-bottom a,
 .footer-bottom span {
-  color: #555;
+  color: #4a352b;
   text-decoration: underline;
 }
 
@@ -210,14 +237,12 @@ flex:1;
 .banner-image{
   width:100%;
   aspect-ratio:5 / 4;
-  border:3px solid #111;
+  border:3px solid #4a352b;
   background-image: url("../img/resto-banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
-
 
 
 /* texte */
@@ -234,7 +259,7 @@ margin-bottom:20px;
 
 .banner-text p{
 font-size:20px;
-color:rgb(90, 90, 90);
+color:#6B4F3A;
 margin-bottom:35px;
 }
 
@@ -250,26 +275,26 @@ gap: 20px;
 .btn{
 text-decoration:none;
 padding:8px 15px;
-border:2px solid black;
+border:2px solid #6B4F3A;
 font-size:18px;
 }
 
 .btn:hover {
-  background-color: #8b1e2d;
-  color: #ffffff;
+  background-color: #6B4F3A;
+  color: #f5f3f1;
   text-decoration: none;
   transition: 0.3s ease;
   transform: scale(1.05);
 }
 
 .btn-order-online{
-background-color: #8b1e2d;
-color:white;
+background-color: #6B4F3A;
+color:#f5f3f1;
 }
 
 .btn-book{
-background:white;
-color:black;
+background:#f5f3f1;
+color:#4a352b;
 }
 
 
@@ -279,7 +304,7 @@ color:black;
 
 
 .subtitle{
-  color:rgb(90, 90, 90);
+  color:#6B4F3A;
   margin-bottom:30px;
 }
 
@@ -290,7 +315,7 @@ color:black;
 }
 
 .testimonial {
-  background: #dddddd;
+  background: #6c4e3129;
   padding: 20px;
   border-radius: 17px;
   flex: 1 1 calc(33.333% - 20px);
@@ -308,6 +333,7 @@ color:black;
 
 .testimonial-name{
   font-weight:bold;
+  color: #4a352b;
 }
 
 .testimonial-text{
@@ -325,7 +351,7 @@ color:black;
 .testimonial-icon{
 width:40px;
 height:40px;
-fill:#333;
+fill:#4a352b;
 }
 
 /* -------- PAGE RESERVATION-------- */
@@ -360,17 +386,17 @@ legend {
   margin: 0 0 1rem 0;
   font-size: 1.3rem;
   font-weight: 700;
-  color: #8b1e2d;
+  color: #4a352b;
 }
 
 
 .reservation-form fieldset {
-  border: 1px solid #ddd4cd;
+  border: 1px solid #6b4f3a41;
   border-radius: 14px;
   padding: 1.2rem 1.25rem 1.2rem;
   margin-bottom: 1rem;
-  background-color: #f8f5f2;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  background-color: #6c4e3129;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176);
 }
 
 .form-grid {
@@ -388,7 +414,7 @@ legend {
 .field-title {
   margin-bottom: 0.35rem;
   font-weight: 600;
-  color: #4a342d;
+  color: #6B4F3A;
 }
 
 .reservation-form input[type="text"],
@@ -400,11 +426,11 @@ legend {
 .reservation-form textarea {
   width: 100%;
   padding: 0.55rem 0.7rem;
-  border: 1px solid #d8cfc8;
+  border: 1px solid #6b4f3a41;
   border-radius: 6px;
-  background-color: #fcfaf8;
+  background-color: #f5f3f1;
   font: inherit;
-  color: #3a2822;
+  color: #6B4F3A;
   box-sizing: border-box;
 }
 
@@ -412,8 +438,7 @@ legend {
 .reservation-form select:focus,
 .reservation-form textarea:focus {
   outline: none;
-  border-color: #8b1e2d;
-  box-shadow: 0 0 0 2px rgba(139, 30, 45, 0.1);
+  border-color: #6B4F3A;
 }
 
 .reservation-form textarea {
@@ -434,7 +459,7 @@ legend {
 
 .checkbox-group input[type="checkbox"] {
   width: auto;
-  accent-color: #8b1e2d;
+  accent-color: #4a352b;
 }
 
 .checkbox-group label {
@@ -451,7 +476,7 @@ legend {
 
 .radio-group input[type="radio"] {
   width: auto;
-  accent-color: #8b1e2d;
+  accent-color: #4a352b;
 }
 
 .radio-group label {
@@ -470,17 +495,15 @@ legend {
 .form-actions button {
   padding: 0.65rem 1.15rem;
   border-radius: 2px;
-  border: 1px solid #cfc6bf;
-  background-color: #f3efeb;
-  color: #3a2822;
+  background-color: #f5f3f1;
+  color: #6B4F3A;
   font: inherit;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .form-actions button[type="submit"] {
-  background-color: #8b1e2d;
-  border-color: #8b1e2d;
+  background-color: #6B4F3A;
   color: #f5f3f1;
 }
 
@@ -490,11 +513,6 @@ legend {
   transform: scale(1.05);
 }
 
-.form-actions button[type="submit"]:hover,
-.form-actions button[type="submit"]:focus-visible {
-  background-color: #8b1e2d;
-  border-color: #8b1e2d;
-}
 
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
@@ -504,17 +522,6 @@ input[type="checkbox"]:focus {
 
 /* -------- PAGE RESERVATION-CONFIRMATION ------- */
 
-.confirmation-return {
-  padding: 0.65rem 1.15rem;
-  border-radius: 2px;
-  background-color: #8b1e2d;
-  border-color: #8b1e2d;
-  color: #f5f3f1;
-  font: inherit;
-  cursor: pointer;
-  transition: 0.2s ease;
-  display: inline-block;
-}
 
 .confirmation-return:hover,
 .confirmation-return:focus-visible {
@@ -639,9 +646,10 @@ a {
 
 .address-link a:hover,
 .address-link a:focus-visible {
-  color: #8b1e2d;
-  text-decoration: underline;
+  color: #6B4F3A;
+  text-decoration: none;
   transform: scale(1.05);
+
 }
 
 .restaurant-map img {
@@ -671,7 +679,7 @@ table{
 }
 
 thead{
-  background:#e5e5e5;
+  background:#6c4e3129;
 }
 
 th,td{
@@ -680,7 +688,7 @@ th,td{
 }
 
 tbody tr:nth-child(even){
-  background:#e5e5e5;
+  background:#6c4e3129;
 }
 
 
@@ -703,7 +711,7 @@ td:nth-child(3) {
   width:280px;
   height: 280px;
   aspect-ratio: 1/1;
-  background:#d9d9d9;
+  background:#6c4e3129;
   padding:24px;
   margin-top: 82px;
 }
@@ -730,12 +738,10 @@ td:nth-child(3) {
 
 .btn-pay{
   display:inline-block;
-  margin-top:15px;
-  background:black;
-  color:white;
+  color:#f5f3f1;
   padding:10px 20px;
   text-decoration:none;
-  background-color: #8b1e2d;
+  background-color: #6B4F3A;
   transition: 0.3s ease;
 }
 
@@ -770,25 +776,25 @@ td:nth-child(3) {
 
 
 .icon {
-  stroke: #8b1e2d;
+  stroke: #6B4F3A;
   stroke-width: 8;
   fill: none;
 }
 
 .icon-fill {
-  fill: #8b1e2d;
+  fill: #6C4E31;
 }
 
 
 .text-small {
-  fill: #8b1e2d;
+  fill: #6C4E31;
   font-size: 28px;
   font-family: "Rye", serif;
   letter-spacing: 5px;
 }
 
 .text-big {
-  fill: #8b1e2d;
+  fill: #4a352b;
   font-size: 64px;
   font-family: "Rye", serif;
   font-weight: bold;
@@ -796,7 +802,7 @@ td:nth-child(3) {
 
 
 .line {
-  stroke: #8b1e2d;
+  stroke: #6C4E31;
   stroke-width: 3;
 }
 
