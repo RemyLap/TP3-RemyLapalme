@@ -41,6 +41,7 @@ body {
   color: #8b1e2d;
   font-weight: 600;
   text-decoration: underline;
+  
 }
 
 .nav-btn {
@@ -472,6 +473,28 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none;
   box-shadow: none;
+}
+
+/* -------- PAGE RESERVATION-CONFIRMATION ------- */
+
+.confirmation-return {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.65rem 1.15rem;
+  border-radius: 2px;
+  background-color: #8b1e2d;
+  border-color: #8b1e2d;
+  color: #f5f3f1;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.confirmation-return:hover,
+.confirmation-return:focus-visible {
+  transition: 0.3s ease;
+  transform: scale(1.05);
 }
 
 /* -------- PAGE RESTAURANT-------- */
