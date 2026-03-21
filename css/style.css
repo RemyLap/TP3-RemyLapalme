@@ -314,7 +314,7 @@ color:#4a352b;
 
 
 
-/* -------- PAGE ACCEUILTÉMOIGNAGES-------- */
+/* -------- PAGE ACCEUIL TÉMOIGNAGES-------- */
 
 
 
@@ -701,6 +701,7 @@ a {
 table{
   width:100%;
   border-collapse:collapse;
+  margin-bottom: 80px;
 }
 
 thead{
