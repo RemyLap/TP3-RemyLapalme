@@ -248,19 +248,21 @@ flex:1;
 /* texte */
 
 .banner-text{
-max-width:450px;
+max-width:355px;
+text-align: justify;
 }
 
 .banner-text h1{
 font-size: 2.5rem;
-line-height:1.1;
-margin-bottom:20px;
+margin: 0;
+padding: 0;
 }
 
 .banner-text p{
 font-size:20px;
 color:#6B4F3A;
-margin-bottom:35px;
+margin-top: 25px;
+margin-bottom: 30px;
 }
 
 /* boutons */
@@ -305,6 +307,7 @@ color:#4a352b;
 
 .subtitle{
   color:#6B4F3A;
+  font-size: 1.6rem;
   margin-bottom:30px;
 }
 
@@ -313,6 +316,11 @@ color:#4a352b;
   flex-wrap:wrap;
   gap:20px;
 }
+
+.testimonials h2 {
+  font-size: 2rem;
+}
+
 
 .testimonial {
   background: #6c4e3129;
@@ -323,22 +331,25 @@ color:#4a352b;
   flex-direction: column;
 }
 
-
 .testimonial-header{
   display:flex;
   align-items:center;
   gap:10px;
-  margin-bottom:0px;
+  margin-bottom: 8px;
 }
 
 .testimonial-name{
   font-weight:bold;
   color: #4a352b;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .testimonial-text{
-  font-size: 20px;
+  font-size: 17px;
   margin: 0px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .testimonial-img{
@@ -665,7 +676,7 @@ a {
 .layout{
   display:flex;
   align-items: flex-start;
-  gap:150px;
+  gap:140px;
 }
 
 .commande{
@@ -713,7 +724,7 @@ td:nth-child(3) {
   aspect-ratio: 1/1;
   background:#6c4e3129;
   padding:24px;
-  margin-top: 82px;
+  margin-top: 65px;
 }
 
 .aside-details h2,
