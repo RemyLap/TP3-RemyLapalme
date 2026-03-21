@@ -390,7 +390,6 @@ color:#4a352b;
   font-size: 2rem;
 }
 
-
 .testimonial {
   background: #6c4e3129;
   padding: 20px;
@@ -434,7 +433,8 @@ height:40px;
 fill:#4a352b;
 }
 
-/* -------- PAGE RESERVATION-------- */
+
+/* ----------- PAGE RESERVATION ----------- */
 
 
 .reservation-form {
@@ -600,7 +600,7 @@ input[type="checkbox"]:focus {
   box-shadow: none;
 }
 
-/* -------- PAGE RESERVATION-CONFIRMATION ------- */
+/* --------- PAGE RESERVATION-CONFIRMATION -------- */
 
 
 .confirmation-return:hover,
@@ -626,9 +626,7 @@ input[type="checkbox"]:focus {
 
 /* -------- PAGE RESTAURANT-------- */
 
-
 /* --section grid-- */
-
 
 .restaurant-grid {
   display: grid;
@@ -645,6 +643,7 @@ input[type="checkbox"]:focus {
 }
 
 /* images du haut */
+
 .grid-img-top-left {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -655,19 +654,20 @@ input[type="checkbox"]:focus {
   grid-row: 1 / 2;
 }
 
-/* grande image droite */
+/* grande image  */
+
 .grid-img-large-right {
   grid-column: 3 / 5;
   grid-row: 1 / 3;
 }
 
-/* grande image gauche */
 .grid-img-large-left {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
 }
 
 /* images du bas */
+
 .grid-img-bottom-left {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
@@ -702,8 +702,6 @@ input[type="checkbox"]:focus {
   margin: 0;
 }
 
-
-
 .restaurant-details a {
   margin: 0 0 32px;
   font-size: 1.7rem;
@@ -717,7 +715,6 @@ input[type="checkbox"]:focus {
   text-decoration: none;
   display: inline-block;
   transition: 0.3s ease;
-
 }
 
 a {
@@ -740,7 +737,8 @@ a {
   min-height: 420px;
 }
 
-/* -------- PAGE MA COMMANDE-------- */
+
+/* ----------- PAGE MA COMMANDE ---------- */
 
 
 .layout{
@@ -752,7 +750,6 @@ a {
 .commande{
   flex:1;
 }
-
 
 table{
   width:100%;
@@ -801,15 +798,12 @@ td:nth-child(3) {
 .aside-details h2,
 .aside-details hr {
   margin: 0px;
-
 }
 
 .aside-details p {
  margin-top: 20px;
  margin-bottom: 18px;
 }
-
-
 
 .aside-cost {
   display: flex;
@@ -833,9 +827,11 @@ td:nth-child(3) {
 }
 
 
+/* ------------ Point Rupture ------------ */
+
+
 @media screen and (max-width: 1200px) {
 
-  
   .banner-content {
     gap: 35px;
     justify-content: center
