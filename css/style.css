@@ -1,13 +1,19 @@
+/* ----------- fonts ------------ */
+
+
 .rye-regular {
   font-family: "Rye", serif;
   font-weight: normal;
   font-style: normal;
 }
 
+
+/* ------------ General ------------ */
+
+
 html, body {
   height: 100%;
 }
-
 
 body {
   display: flex;
@@ -24,11 +30,26 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 70px;
+  color: #4a352b;
+  font-family: "Rye", serif;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #4a352b;
+  font-family: "Rye", serif;
+}
+
 .container {
   width: min(95%, 1200px);
   margin: 0 auto;
 }
 
+
+/* ----------- Navigation ------------ */
 
 
 .header-content {
@@ -54,10 +75,6 @@ main {
   border-radius: 999px;
   background-color: #4a352b;
 }
-
-
-
-
 
 .nav {
   display: flex;
@@ -134,24 +151,67 @@ main {
 }
 
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 70px;
-  color: #4a352b;
-  font-family: "Rye", serif;
+/* ------------ LOGO------------ */
+
+
+.logo svg {
+  width: 200px;
+  height: auto;
+  display: block;
+  display: inline-block;
 }
 
-h2 {
-  font-size: 1.4rem;
-  color: #4a352b;
-  font-family: "Rye", serif;
+.logo:hover svg {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 
-/* -------- FOOTER -------- */
+.background {
+  fill: none;
+}
 
 
-/* -------- PARTIE HAUT -------- */
+.icon {
+  stroke: #6B4F3A;
+  stroke-width: 8;
+  fill: none;
+}
+
+.icon-fill {
+  fill: #6C4E31;
+}
+
+.text-small {
+  fill: #6C4E31;
+  font-size: 28px;
+  font-family: "Rye", serif;
+  letter-spacing: 5px;
+}
+
+.text-big {
+  fill: #4a352b;
+  font-size: 64px;
+  font-family: "Rye", serif;
+  font-weight: bold;
+}
+
+.line {
+  stroke: #6C4E31;
+  stroke-width: 3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* ------------ FOOTER ------------ */
+
+
+/* -- PARTIE HAUT -- */
 
 footer p {
   color: #4a352b;
@@ -194,8 +254,7 @@ footer p {
   transform: scale(1.05);
 }
 
-
-/* -------- LIGNE -------- */
+/* - Ligne separation - */
 
 .footer-divider {
   border: none;
@@ -204,8 +263,7 @@ footer p {
   margin: 20px 0;
 }
 
-
-/* -------- PARTIE BAS -------- */
+/* - PARTIE BAS - */
 
 .footer-bottom {
   display: flex;
@@ -261,37 +319,37 @@ flex:1;
 /* texte */
 
 .banner-text{
-max-width:355px;
-text-align: justify;
+  max-width:355px;
+  text-align: justify;
 }
 
 .banner-text h1{
-font-size: 2.5rem;
-margin: 0;
-padding: 0;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .banner-text p{
-font-size:20px;
-color:#6B4F3A;
-margin-top: 25px;
-margin-bottom: 30px;
+  font-size:20px;
+  color:#6B4F3A;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 /* boutons */
 
 .banner-actions{
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 
 }
 
 .btn{
-text-decoration:none;
-padding:8px 15px;
-border:2px solid #6B4F3A;
-font-size:18px;
+  text-decoration:none;
+  padding:8px 15px;
+  border:2px solid #6B4F3A;
+  font-size:18px;
 }
 
 .btn:hover {
@@ -313,9 +371,7 @@ color:#4a352b;
 }
 
 
-
 /* -------- PAGE ACCEUIL TÉMOIGNAGES-------- */
-
 
 
 .subtitle{
@@ -774,68 +830,6 @@ td:nth-child(3) {
 .btn-pay:hover,
 .btn-pay:focus-visible {
   transform: scale(1.05);
-}
-
-
-
-
-
-/* -------- LOGO-------- */
-
-
-.logo svg {
-  width: 200px;
-  height: auto;
-  display: block;
-  display: inline-block;
-}
-
-.logo:hover svg {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-
-.bg {
-  fill: none;
-}
-
-
-.icon {
-  stroke: #6B4F3A;
-  stroke-width: 8;
-  fill: none;
-}
-
-.icon-fill {
-  fill: #6C4E31;
-}
-
-
-.text-small {
-  fill: #6C4E31;
-  font-size: 28px;
-  font-family: "Rye", serif;
-  letter-spacing: 5px;
-}
-
-.text-big {
-  fill: #4a352b;
-  font-size: 64px;
-  font-family: "Rye", serif;
-  font-weight: bold;
-}
-
-
-.line {
-  stroke: #6C4E31;
-  stroke-width: 3;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 
